@@ -1,0 +1,16 @@
+@import 'tailwindcss';
+
+
+@theme {
+	/* Your existing colors... */
+	--color-shadow-gold: #F5C45E;
+  --color-wedding-gold: #FFEC9E;
+  --color-light-maroon: #F2E8C6;
+  --color-dark-maroon: #F2E8C6;
+  --color-dark-red: #9A3F3F;
+  --color-text-light-brown: #C1856D;
+  --color-custom-orange: #FFA725;
+  --color-custom-white: #FFFCFB;
+  --color-custom-yellow: #E8C999;
+  --color-light-yellow: #FEF9E1;
+}
