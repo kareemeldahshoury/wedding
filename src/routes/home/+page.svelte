@@ -110,10 +110,12 @@
         </button>
       </div>
 
-      <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <svg class="w-6 h-6 text-dark-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-        </svg>
+      <div class="hidden sm:block absolute bottom-6 md:bottom-8 lg:bottom-12 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div class="bg-white/10 backdrop-blur-sm rounded-full p-3 border border-white/20">
+          <svg class="w-5 h-5 md:w-6 md:h-6 text-dark-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+          </svg>
+        </div>
       </div>
       </div>
     </section>

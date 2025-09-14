@@ -53,7 +53,7 @@
 
 </script>
 
-<div class="h-screen w-full flex flex-col justify-center items-center bg-dark-red/70">
+<div class="min-h-screen w-full flex flex-col justify-center items-center bg-dark-red/70">
   <h1 class="text-8xl text-light-yellow">Sign Up</h1>
   <p class="mt-10 w-52 text-lg text-center sm:text-sm md:text-md lg:text-lg text-light-yellow font-light mb-2">
     Please RSVP for the wedding by answering the questions below!
@@ -110,9 +110,9 @@
     </div>  
   
     {#if submitted}
-      <div class="flex space-x-4 mt-10 items-center">
-        <h1 class="text-xl text-light-yellow">Submitting ...</h1>
-      </div>  
+    <div class="flex space-x-4 mt-10 items-center">
+      <h1 class="text-xl text-light-yellow leading-relaxed mb-20">Submitting ...</h1>
+    </div>   
     {/if}
   </div>
 </div>
