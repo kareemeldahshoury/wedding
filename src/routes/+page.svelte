@@ -3,10 +3,10 @@
   import { writable } from "svelte/store";
   import { goto } from "$app/navigation";
 
-  // Initialize the visitor count from localStorage (if available)
+
   const code = "KingReem02";
   let password = $state("");
-  //let pageRefreshed = writable(false);
+
 
   async function login() {
       if (password == code){
@@ -35,7 +35,7 @@
       alt="Wedding photo"
     >
     
-    <!-- Password input positioned behind/under the image -->
+
     <div class="absolute inset-0 flex flex-col items-center justify-center p-4 space-y-4">
       <input 
         type="password" 

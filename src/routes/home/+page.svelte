@@ -2,7 +2,7 @@
   import { onMount } from 'svelte';
   import { goto } from "$app/navigation";
   
-  // Wedding data - replace with your actual details
+
   const weddingData = {
     bride: 'Medo',
     groom: 'Rawan',
@@ -11,7 +11,6 @@
     location: 'Napa Valley, California'
   };
 
-  // Calculate countdown
   let timeLeft = {
     days: 0,
     hours: 0,
@@ -38,7 +37,6 @@
     return () => clearInterval(interval);
   });
 
-  // Format wedding date for display
   const formatDate = (dateString: string): string => {
     return new Date(dateString).toLocaleDateString('en-US', {
       weekday: 'long',
@@ -52,12 +50,16 @@
       goto("/rsvp")
     }
 
-  // Navigation items
+  async function registry() {
+    goto('/registry')
+  }
+
+
   const navItems = ['Home', 'Our Story', 'Details', 'Registry', 'RSVP'];
 </script>
 
-<div class="min-h-screen bg-custom-white">
-  <section class="relative min-h-screen flex items-center justify-center px-4">
+<div class="min-h-screen bg-dark-red/10">
+  <section class="relative min-h-screen bg-dark-red/10 flex items-center justify-center px-4">
     <div class="text-center z-10 max-w-4xl mx-auto">
       <div class="mb-8">
         <h1 class="font-serif text-6xl sm:text-7xl lg:text-8xl text-dark-red mb-4 ml-13 leading-tight">
@@ -103,7 +105,7 @@
         <button onclick={rsvp} class="bg-dark-red/70 hover:bg-custom-yellow/70 text-custom-yellow px-8 py-3 rounded-full font-semibold transition-all duration-200 transform hover:scale-105 shadow-lg border-2 border-dark-red/5 hover:border-custom-yellow/7 hover:text-dark-red">
           RSVP Now
         </button>
-        <button class="border-2 border-custom-yellow/8 text-dark-red bg-custom-yellow/80 hover:bg-dark-red/70 hover:text-custom-yellow px-8 py-3 rounded-full font-semibold transition-all duration-200 transform hover:scale-105 shadow-lg">
+        <button onclick={registry} class="border-2 border-custom-yellow/8 text-dark-red bg-custom-yellow/80 hover:bg-dark-red/70 hover:text-custom-yellow px-8 py-3 rounded-full font-semibold transition-all duration-200 transform hover:scale-105 shadow-lg">
           View Registry
         </button>
       </div>
@@ -116,11 +118,11 @@
       </div>
     </section>
 
-    <section class="py-16 bg-custom-white">
+    <section class="py-16 bg-dark-red/10">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid md:grid-cols-3 gap-8 text-center">
           <div class="group hover:transform hover:scale-105 transition-all duration-200">
-            <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-white">
+            <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-dark-red/20">
               <svg class="w-8 h-8 text-dark-red/80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
@@ -131,7 +133,7 @@
           </div>
 
           <div class="group hover:transform hover:scale-105 transition-all duration-200">
-            <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-white">
+            <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-dark-red/20">
               <svg class="w-8 h-8 text-dark-red/80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -143,7 +145,7 @@
           </div>
 
           <div class="group hover:transform hover:scale-105 transition-all duration-200">
-            <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-white">
+            <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-dark-red/20">
               <svg class="w-8 h-8 text-dark-red/80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
               </svg>
