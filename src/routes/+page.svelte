@@ -20,7 +20,7 @@
 
 
 </script>
-<div class="min-h-screen flex flex-col items-center justify-center">
+<div class="min-h-screen flex flex-col items-center justify-center bg-dark-red/30">
   <div class="relative mb-8 sm:mb-12 md:mb-16 lg:mb-20
     w-80 h-60       
     sm:w-96 sm:h-72  
@@ -41,12 +41,12 @@
         type="password" 
         placeholder="Enter password"
         bind:value={password}
-        class="w-full max-w-xs px-4 py-3 text-lg border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent shadow-sm bg-white opacity-0 group-hover:opacity-100 duration-500"
+        class="w-full max-w-xs px-4 py-3 text-lg border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-dark-red/80 focus:border-transparent shadow-sm bg-white opacity-0 group-hover:opacity-100 duration-500"
       >
       <button 
         type="submit"
         onclick={login}
-        class="w-full max-w-xs px-4 py-3 text-lg bg-blue-500 hover:bg-blue-600 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 shadow-sm opacity-0 group-hover:opacity-100 duration-500"
+        class="w-full max-w-xs px-4 py-3 text-lg bg-dark-red hover:bg-dark-red/80 text-light-yellow rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 shadow-sm opacity-0 group-hover:opacity-100 duration-500"
       >
         Enter
       </button>
