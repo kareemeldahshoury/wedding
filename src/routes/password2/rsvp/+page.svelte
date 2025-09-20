@@ -10,56 +10,58 @@
   let submitted = $state(false);
 
   async function submitRSVP() {
-    submitted = true;
-    try {
-        const formData = {
-              name: firstName,
-              email: lastName,
-              attending: attending,
-              pluses: pluses
-          };
+    // submitted = true;
+    // try {
+    //     const formData = {
+    //           name: firstName,
+    //           email: lastName,
+    //           attending: attending,
+    //           pluses: pluses
+    //       };
 
-        console.log('Submitting form data:', formData);
-        const response = await fetch('https://script.google.com/macros/s/AKfycbwRXcLpxQP12k4iLfjO-uFZ99dHDgUGshcgpDCWUCV_iN6feX3Uy1VabRg3WBz5ldLyRQ/exec', {
-            method: 'POST',
-            body: JSON.stringify(formData)
-        });
+    //     console.log('Submitting form data:', formData);
+    //     const response = await fetch('https://script.google.com/macros/s/AKfycbwRXcLpxQP12k4iLfjO-uFZ99dHDgUGshcgpDCWUCV_iN6feX3Uy1VabRg3WBz5ldLyRQ/exec', {
+    //         method: 'POST',
+    //         body: JSON.stringify(formData)
+    //     });
 
-        const result = await response.text();
-        console.log('Response:', result);
+    //     const result = await response.text();
+    //     console.log('Response:', result);
         
-        try {
-            const res = JSON.parse(result);
-            if (res.success) {
-                alert('RSVP submitted successfully!');
-                goto('/home')
-            } else {
-                alert('Error: ' + res.error);
-                submitted = false;
-            }
-        } catch (parseError) {
-            console.log('Response was not JSON:', result);
-            alert('Form submitted (response not JSON)');
-            goto('/home');
-        }
+    //     try {
+    //         const res = JSON.parse(result);
+    //         if (res.success) {
+    //             alert('RSVP submitted successfully!');
+    //             goto('/registry')
+    //         } else {
+    //             alert('Error: ' + res.error);
+    //             submitted = false;
+    //         }
+    //     } catch (parseError) {
+    //         console.log('Response was not JSON:', result);
+    //         alert('Form submitted (response not JSON)');
+    //         goto('/home');
+    //     }
         
-    } catch (error) {
-        console.error('Error:', error);
-        alert('Error submitting RSVP: ' + error.message);
-        submitted = false;
-    }
+    // } catch (error) {
+    //     console.error('Error:', error);
+    //     alert('Error submitting RSVP: ' + error.message);
+    //     submitted = false;
+    // }
+    window.open('https://docs.google.com/forms/d/e/1FAIpQLSc_zA8dPAU-cKPtNGL5s5xv97txogXqfw-al_jeUMm5Dcx1rQ/viewform?usp=header', '_blank')
+    goto('/password2/registry')
 }
 
 
 </script>
 
 <div class="min-h-screen w-full flex flex-col justify-center items-center bg-dark-red/70">
-  <h1 class="text-8xl text-light-yellow">Sign Up</h1>
+  <h1 class="text-8xl text-light-yellow">RSVP!</h1>
   <p class="mt-10 w-52 text-lg text-center sm:text-sm md:text-md lg:text-lg text-light-yellow font-light mb-2">
-    Please RSVP for the wedding by answering the questions below!
+    Please RSVP for the wedding by filling out the google form!
   </p>
   <div class="space-y-6">
-    <div>
+    <!-- <div>
       <label class="block text-lg text-center text-light-yellow font-medium mb-2 mt-5">What is your first name?</label>
       <input type="text" 
         placeholder="First Name" 
@@ -100,7 +102,7 @@
       />
     </div>
 
-  </div>
+  </div> -->
 
   <div>
     <div class="flex space-x-4 mt-10">
@@ -115,4 +117,5 @@
     </div>   
     {/if}
   </div>
+</div>
 </div>

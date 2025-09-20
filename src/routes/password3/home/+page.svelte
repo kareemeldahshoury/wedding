@@ -47,11 +47,11 @@
   };
 
   async function rsvp() {
-      goto("/rsvp")
+      goto("/password3/rsvp")
     }
 
   async function registry() {
-    goto('/registry')
+    goto('/password3/registry')
   }
 
 

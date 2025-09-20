@@ -27,9 +27,14 @@
     mounted = true;
   });
 
-  async function stripe_redirection() {
-    window.open('https://buy.stripe.com/test_00w9AM0kuf8K4n05mCdMI00', '_blank')
-    goto('/home')
+  async function stripe_redirection_honeymoon() {
+    window.open('https://buy.stripe.com/bJe4gB7TO3Om12f3DT5kk01', '_blank')
+    goto('/password1/home')
+  }
+
+  async function stripe_redirection_apartment() {
+    window.open('https://buy.stripe.com/8x29AVca498G4er5M15kk00', '_blank')
+    goto('/password1/home')
   }
 </script>
 
@@ -56,12 +61,29 @@
     A gift of cash would be a special treat.
   </p>
 
-  <div class="flex justify-center mt-6 sm:mt-10">
+  <h2 class="mt-4 sm:mt-10 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl text-sm sm:text-base md:text-lg lg:text-xl text-center text-light-yellow font-light leading-relaxed">
+    Help Fund Our Honeymoon!
+  </h2>
+
+  <div class="flex justify-center mt-3 sm:mt-5">
     <button 
-      onclick={stripe_redirection} 
+      onclick={stripe_redirection_honeymoon} 
       class="bg-custom-white/70 text-dark-red px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg rounded-full font-semibold transition-all duration-200 transform hover:scale-105 active:scale-95 shadow-lg border-2 border-light-yellow/5 hover:border-custom-white touch-manipulation"
     >
-      RSVP Now
+      Honeymoon Fund
+    </button>
+  </div>
+
+  <h2 class="mt-5 sm:mt-10 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl text-sm sm:text-base md:text-lg lg:text-xl text-center text-light-yellow font-light leading-relaxed">
+    Help Fund Our Apartment!
+  </h2>
+
+  <div class="flex justify-center mt-3 sm:mt-5">
+    <button 
+      onclick={stripe_redirection_apartment} 
+      class="bg-custom-white/70 text-dark-red px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg rounded-full font-semibold transition-all duration-200 transform hover:scale-105 active:scale-95 shadow-lg border-2 border-light-yellow/5 hover:border-custom-white touch-manipulation"
+    >
+      Apartment Fund
     </button>
   </div>
 </div>
