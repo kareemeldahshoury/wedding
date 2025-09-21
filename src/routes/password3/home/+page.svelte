@@ -8,7 +8,7 @@
     groom: 'Rawan',
     date: '2025-11-30',
     venue: 'Minneapolis Marriot Southwest',
-    location: '801 opus pkwy, Minnetonka, MN 55347'
+    location: '801 Opus Pkwy, Minnetonka, MN 55347'
   };
 
   let timeLeft = {
@@ -72,7 +72,7 @@
 
     <div class="text-center z-10 max-w-4xl mx-auto">
       <div class="mb-8">
-        <h1 class="font-script text-6xl sm:text-7xl lg:text-8xl text-primary-text mb-4 ml-5 leading-tight">
+        <h1 class="font-script text-6xl sm:text-7xl lg:text-8xl text-primary-text mb-4 ml-5 sm:ml-3 leading-tight">
           {weddingData.bride}
           <span class="text-secondary-text/80 mx-4">&</span>
           {weddingData.groom}
@@ -146,7 +146,7 @@
             </div>
             <h3 class="text-xl font-semibold text-secondary-text/80 mb-2">When</h3>
             <p class="text-secondary-text/80">{formatDate(weddingData.date)}</p>
-            <p class="text-secondary-text/80 text-sm">4:00 PM Ceremony</p>
+            <p class="text-secondary-text/80 text-sm">6:00 PM</p>
           </div>
 
           <div class="group hover:transform hover:scale-105 transition-all duration-200">
