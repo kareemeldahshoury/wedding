@@ -19,7 +19,7 @@
       goto("/password3/home")
     }
     else {
-      alert('Wrong Password, GET YA ASS OUTTA HERE!');
+      alert('Wrong Password');
     }
   }
 
