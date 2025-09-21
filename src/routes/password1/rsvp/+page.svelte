@@ -71,7 +71,7 @@
     <img src="/flower_rsvp.svg" 
     class="absolute right-2 hidden sm:block md:right-6 lg:right-8 top-1/2 -translate-y-1/2 w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-80 lg:h-80 xl:w-96 xl:h-96 opacity-40 sm:opacity-45 md:opacity-50 scale-x-[-1]" 
     alt="Floral decoration" />
-  <h1 class="text-8xl text-primary-text font-script">RSVP!</h1>
+  <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-primary-text font-script">RSVP!</h1>
   <p class="mt-10 w-52 text-lg text-center sm:text-sm md:text-md lg:text-lg text-secondary-text font-light mb-2">
     Please RSVP for the wedding by filling out the google form!
   </p>
