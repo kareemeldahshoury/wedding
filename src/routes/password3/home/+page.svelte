@@ -62,12 +62,12 @@
   <section class="relative min-h-screen bg-btg-white flex items-center justify-center px-4">
     <!-- Left side floral -->
     <img src="/flower_four.svg" 
-        class="absolute left-2 hidden sm:block md:left-6 lg:left-8 top-1/2 -translate-y-1/2 w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 xl:w-64 xl:h-64 opacity-40 sm:opacity-45 md:opacity-50" 
+        class="absolute left-2 hidden sm:block md:left-6 lg:left-8 top-1/2 -translate-y-1/2 w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-80 lg:h-80 xl:w-96 xl:h-96 opacity-40 sm:opacity-45 md:opacity-50" 
         alt="Floral decoration" />
 
     <!-- Right side floral (flipped) -->
     <img src="/flower_four.svg" 
-        class="absolute right-2 hidden sm:block md:right-6 lg:right-8 top-1/2 -translate-y-1/2 w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 xl:w-64 xl:h-64 opacity-40 sm:opacity-45 md:opacity-50 scale-x-[-1]" 
+        class="absolute right-2 hidden sm:block md:right-6 lg:right-8 top-1/2 -translate-y-1/2 w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-80 lg:h-80 xl:w-96 xl:h-96 opacity-40 sm:opacity-45 md:opacity-50 scale-x-[-1]" 
         alt="Floral decoration" />
 
     <div class="text-center z-10 max-w-4xl mx-auto">

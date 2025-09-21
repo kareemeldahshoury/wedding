@@ -3,9 +3,9 @@
   import { writable } from "svelte/store";
   import { goto } from "$app/navigation";
 
-  const code1: string = "test1";
-  const code2: string = "test2";
-  const code3: string = "test3";
+  const code1: string = "medoNrawan";
+  const code2: string = "Medoandrawan";
+  const code3: string = "Medo&Rawan";
   
   let password: string = $state("");
   let showForm: boolean = $state(false);
@@ -34,9 +34,48 @@
     showForm = !showForm;
   }
 </script>
-
-<div class="min-h-screen flex items-center justify-center bg-dark-red/30 p-4">
-  <!-- Main container with responsive sizing -->
+<div class="min-h-screen flex flex-col items-center justify-center bg-bg-white p-4">
+  <!-- Image -->
+  <img 
+    src="wedding-photo-placeholder.jpg" 
+    class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl
+           rounded-xl shadow-xl mb-6"
+    alt="Wedding photo"
+  >
+  
+  <!-- Password input -->
+  <input 
+    type="password" 
+    placeholder="Enter password"
+    bind:value={password}
+    onkeypress={handleKeyPress}
+    class="w-full max-w-xs 
+           px-4 py-3 
+           text-base md:text-lg 
+           border border-gray-300 rounded-lg 
+           focus:outline-none focus:ring-2 focus:ring-secondary-text/80 focus:border-transparent 
+           shadow-sm bg-white mb-4"
+  >
+  
+  <!-- Submit button -->
+  <button 
+    type="submit"
+    onclick={login}
+    class="w-full max-w-xs 
+           px-4 py-3 
+            md:text-lg 
+           bg-secondary-text hover:bg-secondary-text/80 text-custom-yellow
+           rounded-lg 
+           focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 
+           shadow-sm 
+           transition-all duration-200
+           active:scale-95"
+  >
+    Enter
+  </button>
+</div>
+<!-- <div class="min-h-screen flex items-center justify-center bg-dark-red/30 p-4">
+  
   <div class="relative w-full 
     max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-3xl
     aspect-[4/3]
@@ -46,7 +85,7 @@
     onclick={toggleForm}
     onkeypress={(e) => e.key === 'Enter' && toggleForm()}
   >
-    <!-- Image with hover effect -->
+   
     <img 
       src="wedding-photo-placeholder.jpg" 
       class="absolute inset-0 w-full h-full object-cover rounded-xl shadow-xl
@@ -57,7 +96,7 @@
       alt="Wedding photo"
     >
     
-    <!-- Password form overlay -->
+   
     <div class="absolute inset-0 flex flex-col items-center justify-center p-4 space-y-4">
       <input 
         type="password" 
@@ -96,4 +135,4 @@
       </button>
     </div>
   </div>
-</div>
+</div> -->

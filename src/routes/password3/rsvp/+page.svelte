@@ -55,9 +55,24 @@
 
 </script>
 
-<div class="min-h-screen w-full flex flex-col justify-center items-center bg-dark-red/70">
-  <h1 class="text-8xl text-light-yellow">RSVP!</h1>
-  <p class="mt-10 w-52 text-lg text-center sm:text-sm md:text-md lg:text-lg text-light-yellow font-light mb-2">
+<div class="min-h-screen w-full flex flex-col justify-center items-center bg-bg-white">
+  <img src="/flower_rsvp.svg" 
+  class="absolute left-2 hidden sm:block md:left-6 lg:left-8 top-1/2 -translate-y-1/2 w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-80 lg:h-80 xl:w-96 xl:h-96 opacity-40 sm:opacity-45 md:opacity-50" 
+  alt="Floral decoration" />
+  <img src="/flower_rsvp.svg" 
+  class="absolute left-2 hidden sm:block md:left-6 lg:left-8 top-1/2 -translate-y-1/2 w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-80 lg:h-80 xl:w-96 xl:h-96 opacity-40 sm:opacity-45 md:opacity-50" 
+  alt="Floral decoration" />
+
+
+<!-- Right side floral (flipped) -->
+  <img src="/flower_rsvp.svg" 
+    class="absolute right-2 hidden sm:block md:right-6 lg:right-8 top-1/2 -translate-y-1/2 w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-80 lg:h-80 xl:w-96 xl:h-96 opacity-40 sm:opacity-45 md:opacity-50 scale-x-[-1]" 
+    alt="Floral decoration" />
+    <img src="/flower_rsvp.svg" 
+    class="absolute right-2 hidden sm:block md:right-6 lg:right-8 top-1/2 -translate-y-1/2 w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-80 lg:h-80 xl:w-96 xl:h-96 opacity-40 sm:opacity-45 md:opacity-50 scale-x-[-1]" 
+    alt="Floral decoration" />
+  <h1 class="text-8xl text-primary-text font-script">RSVP!</h1>
+  <p class="mt-10 w-52 text-lg text-center sm:text-sm md:text-md lg:text-lg text-secondary-text font-light mb-2">
     Please RSVP for the wedding by filling out the google form!
   </p>
   <div class="space-y-6">
@@ -106,7 +121,7 @@
 
   <div>
     <div class="flex space-x-4 mt-10">
-      <button on:click={submitRSVP} class="bg-custom-white/70 text-dark-red px-8 py-3 rounded-full font-semibold transition-all duration-200 transform hover:scale-105 shadow-lg border-2 border-light-yellow/5 hover:border-light-yellow/7">
+      <button on:click={submitRSVP} class="bg-secondary-text/65 hover:bg-primary-text/50 text-custom-yellow px-8 py-3 rounded-full font-semibold transition-all duration-200 transform hover:scale-105 shadow-lg border-2 border-dark-red/5 hover:border-primary-text/5 hover:text-secondary-text/70">
           RSVP Now
       </button>
     </div>  
