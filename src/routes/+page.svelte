@@ -37,7 +37,7 @@
 <div class="min-h-screen flex flex-col items-center justify-center bg-bg-white p-4">
   <!-- Image -->
   <img 
-    src="wedding-photo-placeholder.jpg" 
+    src="medoandrawan.png" 
     class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl
            rounded-xl shadow-xl mb-6"
     alt="Wedding photo"
