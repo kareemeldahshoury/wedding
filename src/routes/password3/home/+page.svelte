@@ -169,7 +169,7 @@
             </div>
             <h3 class="text-xl font-semibold text-secondary-text/80 mb-2">RSVP</h3>
             <p class="text-secondary-text/80">Please respond by</p>
-            <p class="text-secondary-text/80 text-sm">May 15th, 2024</p>
+            <p class="text-secondary-text/80 text-sm">Oct 30th, 2025</p>
           </div>
         </div>
       </div>
