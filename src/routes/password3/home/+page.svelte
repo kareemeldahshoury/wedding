@@ -4,7 +4,7 @@
   
 
   const weddingData = {
-    bride: 'Medo3',
+    bride: 'Medo',
     groom: 'Rawan',
     date: '2025-11-30',
     venue: 'Minneapolis Marriot Southwest',
@@ -47,11 +47,11 @@
   };
 
   async function rsvp() {
-      goto("/password2/rsvp")
+      goto("/password3/rsvp")
     }
 
   async function registry() {
-    goto('/password2/registry')
+    goto('/password3/registry')
   }
 
 
