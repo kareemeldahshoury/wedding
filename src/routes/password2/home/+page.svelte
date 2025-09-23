@@ -4,7 +4,7 @@
   
 
   const weddingData = {
-    bride: 'Medo',
+    bride: 'Medo2',
     groom: 'Rawan',
     date: '2025-11-30',
     venue: 'Minneapolis Marriot Southwest',
