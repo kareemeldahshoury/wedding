@@ -8,7 +8,7 @@
     groom: 'Rawan',
     date: '2025-11-30',
     venue: 'Minneapolis Marriot Southwest',
-    location: '801 Opus Pkwy, Minnetonka, MN 55347'
+    location: '5801 Opus Pkwy, Minnetonka, MN 55347'
   };
 
   let timeLeft = {
