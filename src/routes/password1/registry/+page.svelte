@@ -44,26 +44,26 @@
   </p>
 
   <h2 class="mt-4 sm:mt-10 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl text-sm sm:text-base md:text-lg lg:text-xl text-center text-secondary-text  leading-relaxed">
-    Help Fund Our Honeymoon!
+    Send us a gift!
   </h2>
 
   <div class="flex justify-center mt-3 sm:mt-5">
     <button 
       onclick={stripe_redirection_honeymoon} 
       class="bg-secondary-text/65 hover:bg-primary-text/50 text-custom-yellow px-8 py-3 rounded-full font-semibold transition-all duration-200 transform hover:scale-105 shadow-lg border-2 border-dark-red/5 hover:border-primary-text/5 hover:text-secondary-text/70">
-      Honeymoon Fund
+      Honeymoon
     </button>
   </div>
 
-  <h2 class="mt-5 sm:mt-10 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl text-sm sm:text-base md:text-lg lg:text-xl text-center text-secondary-text leading-relaxed">
+  <!-- <h2 class="mt-5 sm:mt-10 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl text-sm sm:text-base md:text-lg lg:text-xl text-center text-secondary-text leading-relaxed">
     Help Fund Our Apartment!
-  </h2>
+  </h2> -->
 
   <div class="flex justify-center mt-3 sm:mt-5">
     <button 
       onclick={stripe_redirection_apartment} 
       class="bg-secondary-text/65 hover:bg-primary-text/50 text-custom-yellow px-8 py-3 rounded-full font-semibold transition-all duration-200 transform hover:scale-105 shadow-lg border-2 border-dark-red/5 hover:border-primary-text/5 hover:text-secondary-text/70">
-      Apartment Fund
+      Apartment
     </button>
   </div>
 
