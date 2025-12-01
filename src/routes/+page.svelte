@@ -113,6 +113,17 @@
         <br>
         <br>
         <h2 class="text-2xl font-serif text-secondary-text/80 mb-6"> Formal Wear Please</h2>
+          <p class="mt-4 sm:mt-10 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl text-sm sm:text-base md:text-lg lg:text-xl text-center text-secondary-text font-light mb-6 sm:mb-8 leading-relaxed">
+            We've got the dishes, the pots, and the pans,<br>
+            What we'd love most is a gift to our plans!<br>
+            Instead of presents wrapped up so sweet,<br>
+            A gift of cash would be a special treat.
+          </p>
+
+          <h2 class="mt-4 sm:mt-10 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl text-sm sm:text-base md:text-lg lg:text-xl text-center text-secondary-text  leading-relaxed">
+            Send us a gift!
+          </h2>
+
       </div>
 
       <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16 sm:mb-20 md:mb-24"> 
